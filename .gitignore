@@ -1,0 +1,19 @@
+# Node modules
+node_modules/
+
+# Dist directory
+dist/
+
+# Cache
+.cache/
+
+# Editor directories
+.idea/
+.vscode/
+
+# Dependency directories
+/bower_components/
+
+# Logs
+npm-debug.log
+yarn-error.log

@@ -1,0 +1,57 @@
+<div class="container mt-5">
+
+    <div align="right">
+        <button mat-raised-button color="accent" routerLink="/client-list">Go to Client List</button>
+    </div>
+
+    <div class="card p-5 mt-2">
+
+        <form #clientForm="ngForm" (ngSubmit)="saveClient(clientForm)">
+            <mat-form-field appearance="outline">
+                <mat-label>Client Id</mat-label>
+                <input matInput placeholder="Client Id" name="clientId" [(ngModel)]="client.clientId" disabled>
+                <mat-icon matSuffix>sentiment_very_satisfied</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>FirstName</mat-label>
+                <input matInput placeholder="FirstName" name="firstName" [(ngModel)]="client.firstName">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>LastName</mat-label>
+                <input matInput placeholder="LastName" name="lastName" [(ngModel)]="client.lastName">
+                <mat-icon matSuffix>person</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Contact Number</mat-label>
+                <input matInput placeholder="Contact Number" name="phone" [(ngModel)]="client.phone">
+                <mat-icon matSuffix>call</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Email</mat-label>
+                <input matInput type="email" placeholder="Email" name="email" [(ngModel)]="client.email">
+                <mat-icon matSuffix>email</mat-icon>
+            </mat-form-field>
+
+            <mat-form-field appearance="outline">
+                <mat-label>Address</mat-label>
+                <input matInput type="address" placeholder="address" name="address" [(ngModel)]="client.address">
+                <mat-icon matSuffix>address</mat-icon>
+            </mat-form-field>
+
+            <mat-divider></mat-divider>
+
+            <div class="text-center mt-3">
+                <button mat-raised-button class="m-2">Clear</button>
+                <button mat-raised-button color="primary" class="m-2">Save</button>
+            </div>
+
+        </form>
+
+
+    </div>
+</div>
